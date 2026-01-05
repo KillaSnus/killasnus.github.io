@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- 🥇 Optimized H1 in Title for maximum visibility on Killa Snus and Discount Code -->
-    <title>Buy Killa Snus | Europesnus Discount Code</title>
+    <title>Buy Killa Snus Online | Get Europesnus Discount Code 2026</title>
     
     <!-- 📝 SEO Meta Description targeting primary keywords -->
     <meta name="description" content="Killasnus.store offers the widest range of Killa Snus flavors. Use the exclusive Europesnus Discount Code to save big on all premium nicotine pouches. Fast delivery to Switzerland & Europe.">
@@ -43,6 +43,16 @@
             border: 3px solid #dc2626;
             box-shadow: 0 10px 30px rgba(220, 38, 38, 0.2);
             position: relative;
+            /* Ensures card takes full width of its inner container on mobile */
+            width: 95%; /* Adjusted to prevent overflow on very small screens */
+            max-width: 48rem; /* Max width constraint */
+        }
+
+        /* Center card explicitly for safety */
+        .discount-card-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
         
         .cta-button {
@@ -304,28 +314,31 @@
                     </p>
 
                     <!-- DISCOUNT CARD - Key Conversion Element -->
-                    <div class="discount-card inline-block p-6 md:p-8 rounded-xl mx-auto relative z-10">
-                        <h2 class="text-xl md:text-2xl font-black text-gray-800 uppercase mb-3 text-red-600">
-                            Your Exclusive Savings:
-                        </h2>
-                        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                            
-                            <!-- UPDATED COUPON CODE -->
-                            <span id="coupon-code-display" class="text-5xl md:text-6xl font-black accent-blue tracking-wider drop-shadow-lg">
-                                EUROPESNUS50
-                            </span>
-                            
-                            <!-- Discount Link to Weebly -->
-                            <a href="https://killasnus.weeblysite.com/discount-code/" target="_blank" class="primary-red text-white p-4 rounded-xl shadow-lg w-full sm:w-auto font-bold uppercase text-sm cta-button hover:bg-red-700">
-                                <span class="flex items-center justify-center">
-                                    <svg class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-                                    ACTIVATE DISCOUNT & SHOP
+                    <!-- Added discount-card-wrapper for better mobile centering/constraint -->
+                    <div class="discount-card-wrapper">
+                        <div class="discount-card p-6 md:p-8 rounded-xl relative z-10">
+                            <h2 class="text-xl md:text-2xl font-black text-gray-800 uppercase mb-3 text-red-600">
+                                Your Exclusive Savings:
+                            </h2>
+                            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                                
+                                <!-- UPDATED FONT SIZE FOR MOBILE: text-4xl on small screens, sm:text-5xl for slightly larger ones -->
+                                <span id="coupon-code-display" class="text-4xl sm:text-5xl md:text-6xl font-black accent-blue tracking-wider drop-shadow-lg leading-snug">
+                                    EUROPESNUS50
                                 </span>
-                            </a>
+                                
+                                <!-- Discount Link to Weebly -->
+                                <a href="https://killasnus.weeblysite.com/discount-code/" target="_blank" class="primary-red text-white p-4 rounded-xl shadow-lg w-full sm:w-auto font-bold uppercase text-sm cta-button hover:bg-red-700">
+                                    <span class="flex items-center justify-center">
+                                        <svg class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                                        ACTIVATE DISCOUNT & SHOP
+                                    </span>
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-4 font-semibold">
+                                Click the link to get your verified **Europesnus Discount** applied automatically.
+                            </p>
                         </div>
-                        <p class="text-xs text-gray-500 mt-4 font-semibold">
-                            Click the link to get your verified **Europesnus Discount** applied automatically.
-                        </p>
                     </div>
 
                     <!-- Main CTA to the Weebly Store -->
@@ -568,6 +581,5 @@
         // Note: No Firebase/API calls are necessary for this static landing page.
     </script>
 </body>
-
 </html>
 
